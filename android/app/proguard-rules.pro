@@ -1,0 +1,1 @@
+-keep class com.example.puvadon_jenosize.BuildConfig { *; }

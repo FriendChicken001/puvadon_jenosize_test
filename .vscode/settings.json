@@ -1,0 +1,19 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "cSpell.words": [
+    "autofocus",
+    "barcodes",
+    "Chucker",
+    "cooldown",
+    "Fluttertoast",
+    "Getx",
+    "Jailbroken",
+    "listview",
+    "loadmore",
+    "MQTT",
+    "Pinput",
+    "RGBO",
+    "unfocus"
+  ],
+  "dart.flutterSdkPath": ".fvm/versions/3.27.3"
+}

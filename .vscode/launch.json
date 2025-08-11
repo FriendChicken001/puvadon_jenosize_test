@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Developer",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_developer.dart",
+            "args": [
+                "--flavor",
+                "developer",
+                "--target",
+                "lib/main_developer.dart",
+                "--no-enable-impeller"
+            ]
+        },
+        {
+            "name": "Launch Production",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--target",
+                "lib/main_production.dart",
+                "--no-enable-impeller"
+            ]
+        }
+    ]
+}
