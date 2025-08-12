@@ -1,6 +1,15 @@
 # puvadon_jenosize
 
-This project handle by Clean + MVVM architecture and use GetX for state management and contain simple unit and ui test
+This project is built using Clean Architecture combined with the MVVM pattern, leveraging GetX for state management.
+It includes simple unit tests and UI tests to ensure code quality and functionality.
+
+The project supports multiple environments:
+
+Developer
+
+Production
+
+Both environments are configured to handle native environment variables for platform-specific configurations.
 
 ## Getting Started
 
@@ -130,7 +139,7 @@ lib
 
 ## Run test and coverage
 
-# Sample unit test in `/test`
+Sample unit test in `/test`
 
 - install lcov `brew install lcov`
 - run test `make project/test`
