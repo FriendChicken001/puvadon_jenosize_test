@@ -128,9 +128,9 @@ lib
 
 - **Commenting**: Use `//` for short comments, `///` for documentation, and write meaningful comments that explain why something is done.
 
-# Run test and coverage
+## Run test and coverage
 
-## Sample unit test in `/test`
+# Sample unit test in `/test`
 
 - install lcov `brew install lcov`
 - run test `make project/test`
