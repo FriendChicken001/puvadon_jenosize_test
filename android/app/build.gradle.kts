@@ -31,15 +31,17 @@ android {
         }
     }
 
+    flavorDimensions += "env"
+
     productFlavors {
-        flavorDimensions("production")
-        production {
-            resValue "string", "app_name", "Puvadon Jenosize"
+        create("production") {
+            dimension = "env"
+            resValue("string", "app_name", "Puvadon Jenosize")
         }
-        flavorDimensions("developer")
-        developer {
-            resValue "string", "app_name", "Puvadon Jenosize Dev"
-            applicationIdSuffix ".dev"
+        create("developer") {
+            dimension = "env"
+            applicationIdSuffix = ".dev"
+            resValue("string", "app_name", "Puvadon Jenosize Dev")
         }
     }
 
