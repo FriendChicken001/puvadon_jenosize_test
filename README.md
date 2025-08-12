@@ -130,7 +130,7 @@ lib
 
 ## Run test and coverage
 
-# Sample unit test in `/test`
+Sample unit test in `/test`
 
 - install lcov `brew install lcov`
 - run test `make project/test`
