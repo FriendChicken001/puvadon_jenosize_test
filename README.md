@@ -146,4 +146,4 @@ Sample unit test in `/test`
 
 ## Demo app
 
-<video src="assets/demo/demo_app.mp4" controls width="600"></video>
+▶ [Watch the Demo Video](assets/demo/demo_app.mp4)
