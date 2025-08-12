@@ -11,12 +11,12 @@ import 'package:puvadon_jenosize/src/core/networks/dio_core.dart';
 import 'package:puvadon_jenosize/src/core/secure_storage_core.dart';
 import 'package:puvadon_jenosize/src/core/translation_core.dart';
 import 'package:puvadon_jenosize/src/modules/app.dart';
-import 'package:puvadon_jenosize/src/modules/home_module/home_module.dart';
+import 'package:puvadon_jenosize/src/modules/campaign_module/campaign_module.dart';
 
 class AppModule extends Module {
   @override
   List<GetPage<Map<String, dynamic>>> get routeScreen =>
-      <GetPage<Map<String, dynamic>>>[...HomeModule().routeScreen];
+      <GetPage<Map<String, dynamic>>>[...CampaignModule().routeScreen];
 }
 
 class AppModuleBinding extends Bindings {

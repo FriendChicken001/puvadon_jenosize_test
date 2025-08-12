@@ -11,7 +11,7 @@ import 'package:puvadon_jenosize/src/common/themes/color_theme.dart';
 import 'package:puvadon_jenosize/src/common/translation/translation_config.dart';
 import 'package:puvadon_jenosize/src/core/navigations/route_tracking_observer.dart';
 import 'package:puvadon_jenosize/src/modules/app_module.dart';
-import 'package:puvadon_jenosize/src/modules/home_module/config/home_routes.dart';
+import 'package:puvadon_jenosize/src/modules/campaign_module/config/campaign_routes.dart';
 
 abstract class Module {
   List<GetPage<Map<String, dynamic>>> get routeScreen;
@@ -44,7 +44,7 @@ class App extends StatelessWidget {
   Widget _buildMaterialApp() {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: HomeRoutes.root,
+      initialRoute: CampaignRoutes.root,
       initialBinding: AppModuleBinding(),
       getPages: AppModule().routeScreen,
       translations: TranslationsConfig(),

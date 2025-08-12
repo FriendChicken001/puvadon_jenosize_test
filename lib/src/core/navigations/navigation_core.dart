@@ -16,19 +16,6 @@ abstract class Navigation {
   void popUntilPath(String path);
 
   bool canPop();
-
-  Future<T?> dialog<T>(
-    Widget widget, {
-    bool barrierDismissible = true,
-    Color? barrierColor,
-    bool useSafeArea = true,
-    GlobalKey<NavigatorState>? navigatorKey,
-    Object? arguments,
-    Duration? transitionDuration,
-    Curve? transitionCurve,
-    String? name,
-    RouteSettings? routeSettings,
-  });
 }
 
 class NavigationImpl implements Navigation {
@@ -58,29 +45,4 @@ class NavigationImpl implements Navigation {
   @override
   bool canPop() =>
       Get.context != null ? Navigator.of(Get.context!).canPop() : false;
-
-  @override
-  Future<T?> dialog<T>(
-    Widget widget, {
-    bool barrierDismissible = true,
-    Color? barrierColor,
-    bool useSafeArea = true,
-    GlobalKey<NavigatorState>? navigatorKey,
-    Object? arguments,
-    Duration? transitionDuration,
-    Curve? transitionCurve,
-    String? name,
-    RouteSettings? routeSettings,
-  }) async => await Get.dialog<T>(
-    widget,
-    barrierDismissible: barrierDismissible,
-    barrierColor: barrierColor,
-    useSafeArea: useSafeArea,
-    navigatorKey: navigatorKey,
-    arguments: arguments,
-    transitionDuration: transitionDuration,
-    transitionCurve: transitionCurve,
-    name: name,
-    routeSettings: routeSettings,
-  );
 }

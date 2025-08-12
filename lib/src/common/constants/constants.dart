@@ -10,3 +10,6 @@ const String baseUrlEnv = 'BASE_URL';
 
 // favor flavor names
 const String flavorBaseUrl = 'baseUrl';
+
+// contains the key for storing in secure storage
+const String secureJoinCampaignStorage = 'joined_campaigns';
