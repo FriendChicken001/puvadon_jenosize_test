@@ -108,8 +108,6 @@ lib
             └── profile_module.dart
 ```
 
-## This project is handle name convention and code convention by below rules
-
 # Naming Conventions
 
 - **File Naming**: Use lowercase letters and separate words with underscores for file names (`moduleName_function`) (e.g., `user_repository.dart`).
