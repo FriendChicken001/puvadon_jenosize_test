@@ -15,7 +15,9 @@ CampaignListModel _$CampaignListModelFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$CampaignListModelToJson(CampaignListModel instance) =>
-    <String, dynamic>{'data': instance.campaigns};
+    <String, dynamic>{
+      'data': instance.campaigns.map((e) => e.toJson()).toList(),
+    };
 
 CampaignModel _$CampaignModelFromJson(Map<String, dynamic> json) =>
     CampaignModel(
@@ -29,7 +31,7 @@ CampaignModel _$CampaignModelFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$CampaignModelToJson(CampaignModel instance) =>
     <String, dynamic>{
       'id': instance.id,
-      'image': instance.image,
+      if (instance.image case final value?) 'image': value,
       'title': instance.title,
       'short_description': instance.shortDescription,
       'status': _$CampaignStatusEnumMap[instance.status]!,

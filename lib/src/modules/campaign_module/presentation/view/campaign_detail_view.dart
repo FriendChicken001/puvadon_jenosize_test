@@ -12,8 +12,8 @@ import 'package:puvadon_jenosize/src/modules/campaign_module/presentation/view_m
 import 'package:puvadon_jenosize/src/modules/core_widget_module/widget/app_bar_widget.dart';
 import 'package:puvadon_jenosize/src/modules/core_widget_module/widget/image_network_widget.dart';
 
-class CampaignDetailPage extends GetView<CampaignDetailViewModel> {
-  const CampaignDetailPage({super.key});
+class CampaignDetailView extends GetView<CampaignDetailViewModel> {
+  const CampaignDetailView({super.key});
 
   @override
   Widget build(BuildContext context) {

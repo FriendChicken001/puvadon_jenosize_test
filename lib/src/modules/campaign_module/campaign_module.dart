@@ -25,17 +25,17 @@ class CampaignModule extends Module {
     GetPage(
       name: CampaignRoutes.root,
       page: () => CampaignView(),
-      binding: CampaignBinding(),
+      binding: CampaignModuleBinding(),
     ),
     GetPage(
       name: CampaignRoutes.detail,
-      page: () => const CampaignDetailPage(),
-      binding: CampaignBinding(),
+      page: () => const CampaignDetailView(),
+      binding: CampaignModuleBinding(),
     ),
   ];
 }
 
-class CampaignBinding extends Bindings {
+class CampaignModuleBinding extends Bindings {
   @override
   void dependencies() {
     // data sources
