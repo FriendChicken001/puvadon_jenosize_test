@@ -143,3 +143,7 @@ Sample unit test in `/test`
 
 - install lcov `brew install lcov`
 - run test `make project/test`
+
+## Demo app
+
+<video src="assets/demo/demo_app.mp4" controls width="600"></video>
