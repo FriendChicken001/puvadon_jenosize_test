@@ -19,6 +19,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
     Color? backgroundColor,
     bool? showLeading,
     bool? showBottomLine,
+    List<Widget>? actions,
     Function()? onTapLeading,
   }) : _title = title ?? '',
        _titleStyle =
@@ -30,7 +31,8 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
        _backgroundColor = backgroundColor ?? ColorsTheme.instance.white,
        _showLeading = showLeading ?? true,
        _showBottomLine = showBottomLine ?? true,
-       _onTapLeading = onTapLeading;
+       _onTapLeading = onTapLeading,
+       _actions = actions;
 
   //controller
   final Navigation _navigation = Get.find<Navigation>();
@@ -42,6 +44,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   final Color _backgroundColor;
   final bool _showLeading;
   final bool _showBottomLine;
+  final List<Widget>? _actions;
   final Function()? _onTapLeading;
 
   @override
@@ -62,7 +65,12 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       leadingWidth: 40,
       leading: _buildLeading(),
       bottom: _buildBottom(),
+      actions: _buildActions(),
     );
+  }
+
+  List<Widget> _buildActions() {
+    return _actions?.isNotEmpty == true ? _actions! : [];
   }
 
   PreferredSizeWidget? _buildBottom() {

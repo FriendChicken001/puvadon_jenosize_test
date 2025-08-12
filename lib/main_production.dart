@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 // Package imports:
-import 'package:chucker_flutter/chucker_flutter.dart';
 import 'package:flutter_config/flutter_config.dart';
 import 'package:flutter_flavor/flutter_flavor.dart';
 import 'package:get/get.dart';
@@ -29,9 +28,6 @@ void main() async {
 
   // Set the dependencies
   AppModuleBinding().dependencies();
-
-  // Show ChuckerFlutter in release mode but is developer mode
-  ChuckerFlutter.showOnRelease = false;
 
   // Get locale
   final Translation translation = Get.find<Translation>();

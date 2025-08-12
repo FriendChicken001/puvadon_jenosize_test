@@ -1,0 +1,1 @@
+class ProfileI18nKey {}

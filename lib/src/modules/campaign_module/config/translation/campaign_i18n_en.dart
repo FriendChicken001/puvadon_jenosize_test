@@ -4,4 +4,5 @@ import 'package:puvadon_jenosize/src/modules/campaign_module/config/translation/
 Map<String, String> campaignI18nEN = <String, String>{
   CampaignI18nKey.joinButton: 'Join Now',
   CampaignI18nKey.joinedButton: 'Joined',
+  CampaignI18nKey.seeMoreButton: 'See More',
 };

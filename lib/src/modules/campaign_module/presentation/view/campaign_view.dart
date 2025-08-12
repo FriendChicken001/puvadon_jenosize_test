@@ -17,7 +17,18 @@ class CampaignView extends GetView<CampaignViewModel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarWidget(title: 'Campaigns', showLeading: false),
+      appBar: AppBarWidget(
+        title: 'Campaigns',
+        showLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.local_activity),
+            onPressed: () {
+              controller.navigationToReferFriend();
+            },
+          ),
+        ],
+      ),
       backgroundColor: ColorsTheme.instance.natural20p,
       body: Obx(() {
         if (controller.campaigns.isEmpty) {

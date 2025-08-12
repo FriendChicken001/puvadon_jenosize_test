@@ -40,7 +40,7 @@ class CampaignCardWidget extends StatelessWidget {
           children: [
             _buildDetail(),
             SizeTheme.instance.spacingMHeight,
-            _buildButtonJoin(),
+            _buildButtonSeeMore(),
           ],
         ),
       ),
@@ -84,7 +84,7 @@ class CampaignCardWidget extends StatelessWidget {
     );
   }
 
-  Widget _buildButtonJoin() {
+  Widget _buildButtonSeeMore() {
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton(
@@ -97,7 +97,7 @@ class CampaignCardWidget extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         ),
         child: Text(
-          CampaignI18nKey.joinButton.tr,
+          CampaignI18nKey.seeMoreButton.tr,
           style: TextThemeCustom.instance.button2,
         ),
       ),

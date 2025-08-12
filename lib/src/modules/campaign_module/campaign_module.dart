@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 // Project imports:
 import 'package:puvadon_jenosize/src/modules/app.dart';
-import 'package:puvadon_jenosize/src/modules/campaign_module/config/campaign_routes.dart';
+import 'package:puvadon_jenosize/src/modules/campaign_module/config/routes/campaign_routes.dart';
 import 'package:puvadon_jenosize/src/modules/campaign_module/data/data_sources/local/campaign_local_data_source.dart';
 import 'package:puvadon_jenosize/src/modules/campaign_module/data/data_sources/local/campaign_local_data_source_impl.dart';
 import 'package:puvadon_jenosize/src/modules/campaign_module/data/data_sources/remote/campaign_remote_data_source.dart';

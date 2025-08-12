@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 
 // Package imports:
-import 'package:chucker_flutter/chucker_flutter.dart';
 import 'package:get/get.dart';
 
 // Project imports:
@@ -11,7 +10,7 @@ import 'package:puvadon_jenosize/src/common/themes/color_theme.dart';
 import 'package:puvadon_jenosize/src/common/translation/translation_config.dart';
 import 'package:puvadon_jenosize/src/core/navigations/route_tracking_observer.dart';
 import 'package:puvadon_jenosize/src/modules/app_module.dart';
-import 'package:puvadon_jenosize/src/modules/campaign_module/config/campaign_routes.dart';
+import 'package:puvadon_jenosize/src/modules/campaign_module/config/routes/campaign_routes.dart';
 
 abstract class Module {
   List<GetPage<Map<String, dynamic>>> get routeScreen;
@@ -50,10 +49,7 @@ class App extends StatelessWidget {
       translations: TranslationsConfig(),
       theme: _buildTheme(),
       locale: _getLocale(),
-      navigatorObservers: [
-        RouteTrackingObserver.instance,
-        ChuckerFlutter.navigatorObserver,
-      ],
+      navigatorObservers: [RouteTrackingObserver.instance],
     );
   }
 }

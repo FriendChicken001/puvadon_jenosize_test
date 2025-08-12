@@ -3,10 +3,11 @@ import 'package:get/get.dart';
 
 // Project imports:
 import 'package:puvadon_jenosize/src/core/navigations/navigation_core.dart';
-import 'package:puvadon_jenosize/src/modules/campaign_module/config/campaign_routes.dart';
 import 'package:puvadon_jenosize/src/modules/campaign_module/config/constants/campaign_constants.dart';
+import 'package:puvadon_jenosize/src/modules/campaign_module/config/routes/campaign_routes.dart';
 import 'package:puvadon_jenosize/src/modules/campaign_module/domain/entities/campaing_entities.dart';
 import 'package:puvadon_jenosize/src/modules/campaign_module/domain/usecases/campaign_usecase.dart';
+import 'package:puvadon_jenosize/src/modules/profile_module/config/routes/profile_routes.dart';
 
 class CampaignViewModel extends GetxController {
   CampaignViewModel({
@@ -43,5 +44,9 @@ class CampaignViewModel extends GetxController {
       CampaignRoutes.detail,
       arguments: {CampaignConstants.campaignData: campaign},
     );
+  }
+
+  void navigationToReferFriend() {
+    _navigation.push(ProfileRoutes.referFriendRoute);
   }
 }
