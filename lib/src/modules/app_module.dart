@@ -37,7 +37,6 @@ class AppModuleBinding extends Bindings {
         ..options.sendTimeout = const Duration(seconds: 30)
         ..options.receiveTimeout = const Duration(seconds: 30),
     );
-    Get.find<Dio>().interceptors.clear();
     Get.find<Dio>().interceptors.add(DioInterceptor());
   }
 }
