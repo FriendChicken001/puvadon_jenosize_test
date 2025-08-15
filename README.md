@@ -15,7 +15,7 @@ Both environments are configured to handle native environment variables for plat
 
 - Install fvm for flutter version control read more `https://fvm.app/` (optional but refer)
 - Add credential
-  - Update value environment variable in file `.env`
+  - Update value environment variable in file `.env` (BASE_URL=https://31fd4ef1df654b258fecd9db426b4de3.api.mockbin.io/)
   - Add keystore file for android in folder `android/app/` and update value in file `key.properties` in folder `android/`
 - Run make command `make project/init`
 - In vs code tab RUN AND DEBUG you will see build config (`/.vscode/launch.json`)
